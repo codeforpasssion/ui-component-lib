@@ -184,8 +184,15 @@ npm add component-library-mh-0.0.1.tgz
 
  read more about tailwind merge
 
+commit to githug
 
- 
+publish
+
+npm login
+
+npm publish
+
+
 
 
 
