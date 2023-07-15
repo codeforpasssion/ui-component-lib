@@ -34,9 +34,9 @@ import { resolve } from "path";
 
  entry: resolve(__dirname, "./src/components/index.ts"),   
 
-  name: "component-library-mh",
+  name: "component-library-mh-test-moh",
       // the proper extensions will be added
-      fileName: "component-library-mh",
+      fileName: "component-library-mh-test-moh",
 
 
 
@@ -62,8 +62,8 @@ package.json
  "files": [
     "dist"
   ],
-  "main": "./dist/component-library-mh.umd.cjs",
-  "module": "./dist/component-library-mh.js",
+  "main": "./dist/component-library-mh-test-moh.umd.cjs",
+  "module": "./dist/component-library-mh-test-moh.js",
 
   "exports": {
     ".": {
@@ -74,16 +74,16 @@ package.json
 
 
   yarn run  build
-  you will see dist/component-library-mh.js
-  component-library-mh.umd.cjs
+  you will see dist/component-library-mh-test-moh.js
+  component-library-mh-test-moh.umd.cjs
 
   npm pack
 
-  get a component-library-mh-0.0.0.tgz like a zip file
+  get a component-library-mh-test-moh-0.0.0.tgz like a zip file
 
   test module locally
 
-  npm add component-library-mh-0.0.0.tgz
+  npm add component-library-mh-test-moh-0.0.0.tgz
 
   create TestArea.jsx
 
@@ -100,7 +100,7 @@ export default TestArea;
 in App.jsx
 import "./App.css";
 // import Button from "./components/Button";
-import Button from "component-library-mh";
+import Button from "component-library-mh-test-moh";
 import TestArea from "./TestArea";
 const App = () => {
   return (
@@ -120,7 +120,7 @@ export default App;
 
 error 
 fix
-import {Button} from "component-library-mh";
+import {Button} from "component-library-mh-test-moh";
 
 
 now it will work 
@@ -141,13 +141,13 @@ button.tsx
   </button>
 
 
-npm uninstall component-library-mh
-rm -rf component-library-mh-0.0.0.tgz
+npm uninstall component-library-mh-test-moh
+rm -rf component-library-mh-test-moh-0.0.0.tgz
 
 npm run build
 npm pack
 
-npm add component-library-mh-0.0.1.tgz
+npm add component-library-mh-test-moh-0.0.1.tgz
 
 
 export css to the component
@@ -175,9 +175,9 @@ npm ri=un build
 
 npm pack 
 
-npm add component-library-mh-0.0.1.tgz
+npm add component-library-mh-test-moh-0.0.1.tgz
 
- import "component-library-mh/dist/style.css";
+ import "component-library-mh-test-moh/dist/style.css";
 
 
  pass css style to button component
@@ -190,7 +190,12 @@ publish
 
 npm login
 
-npm publish
+npm publish command
+
+
+test the publish
+
+
 
 
 

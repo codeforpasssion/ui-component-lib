@@ -7,9 +7,9 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, "./src/components/index.ts"),
-      name: "component-library-mh",
+      name: "component-library-mh-test-moh",
       // the proper extensions will be added
-      fileName: "component-library-mh",
+      fileName: "component-library-mh-test-moh",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

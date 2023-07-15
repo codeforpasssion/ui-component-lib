@@ -1,5 +1,5 @@
 import CustomButton from "./components/Button";
-import { Button } from "component-library-mh";
+import { Button } from "component-library-mh-test-moh";
 import TestArea from "./TestArea";
 const App = () => {
   const handleClick = () => {
