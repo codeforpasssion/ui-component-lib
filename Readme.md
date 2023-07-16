@@ -195,6 +195,16 @@ npm publish command
 
 test the publish
 
+peer depencencies
+ react and react dom are peer depencencies
+
+is a way to force the user to download the dependencies whithout
+whih this library wont work 
+
+npm version 
+semver 
+
+
 
 
 
