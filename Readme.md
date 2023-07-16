@@ -205,6 +205,47 @@ npm version
 semver 
 
 
+Testing
+vi test unit testing framework 
+
+npm install -D vitest
+
+
+scripts
+
+ "test": "vitest",
+    "coverage": "vitest run --coverage"
+
+
+ npm install -D jsdom
+
+ npm install @testing-library/react -D
+
+ npm install -D @testing-library/jest-dom
+
+
+  test: {
+    environment: "jsdom",
+    globals: true,
+    setupFiles: "./src/__tests__/setup.js",
+  },
+
+  __test__
+  setup.js
+   import { expect, afterEach } from "vitest";
+
+import { cleanup } from "@testing-library/react";
+
+import matchers from "@testing-library/jest-dom/matchers";
+
+expect.extend(matchers);
+
+afterEach(() => {
+  cleanup();
+});
+
+
+create components/Button.test.jsx
 
 
 
